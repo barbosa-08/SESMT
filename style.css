@@ -1,0 +1,332 @@
+/*vvvvvvvvvv-----header e afins-----vvvvvvvvvv*/
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #bbbbbb;
+}
+
+*/ {
+  margin: 0px;
+}
+
+header {
+  background-color: rgb(36, 36, 36);
+  color: rgb(81, 255, 0);
+  padding: 5px;
+  gap:5px;
+}
+
+main {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box-title{
+  display: flex;
+  margin-left: 25px;
+  font-size: 30px;font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  font-family: "New Amsterdam";
+}
+
+
+.box {
+  border-radius: 24px;
+  background-color: rgb(234, 234, 234);
+  width: 40%;
+  padding: 40px;
+}
+
+
+footer {}
+
+/*^^^^^^^^^^-----header e afins-----^^^^^^^^^^*/
+
+/*vvvvvvvvvv-----FONTES-----vvvvvvvvvv*/
+
+@font-face {
+  font-family: Cinzel;
+  src: url("Cinzel/static/Cinzel-Black.ttf");
+}
+
+.fonteimportada {
+  display: flex;
+  justify-content: center;
+  font-family: Cinzel;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.newamsterdan {
+  display: flex;
+  justify-content: center;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 20;
+  font-style: normal;
+  font-size: 80px;
+}
+
+/*^^^^^^^^^^-----FONTES-----^^^^^^^^^^*/
+
+/*vvvvvvvvvv-----ICONES-----vvvvvvvvvv*/
+.icon {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: grey;
+}
+
+.icon img {
+  height: 40px;
+  width: 40px;
+}
+
+a {
+  color: black;
+  margin: 10px;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+/*^^^^^^^^^^-----ICONES-----^^^^^^^^^^*/
+
+/*vvvvvvvvvv-----IMGS-----vvvvvvvvvv*/
+
+.img-align{
+  display: flex;
+  justify-content: space-around;
+}
+.imgs {
+  margin-top: 6%;
+  margin-bottom: 6%;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px;
+  column-gap: 100px;
+  background-color: rgb(235,234,234);
+  padding: 40px;
+  border-radius: 24px;
+
+}
+
+.imgs img {
+  width: 500px;
+  height: 250px;
+  border-radius: 14px;
+}
+
+/*^^^^^^^^^^-----IMGS-----^^^^^^^^^^*/
+
+
+/*vvvvvvvvvv-----CHECKBOXREDONDA-----vvvvvvvvvv*/
+
+.content2 {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  margin: 10px;
+}
+
+.content2 span {
+  padding-left: 15px;
+  font-size: 30px;
+  font-family: "New Amsterdam";
+  font-weight: 400;
+  color: rgb(91, 91, 91);
+}
+
+.checkBox2 {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 2px rgb(91, 91, 91);
+}
+
+.checkBox2 div {
+  width: 1000px;
+  height: 1000px;
+  background-color: #ffffff;
+  top: 960px;
+  left: 960px;
+  position: absolute;
+  z-index: 100;
+}
+
+.checkBox2 input[type="checkbox"]:checked+div {
+  left: -100px;
+  top: -100px;
+}
+
+.checkBox2 input[type="checkbox"] {
+  left: 50px;
+  visibility: hidden;
+}
+
+#grande {
+  width: 90px;
+  height: 90px;
+  margin-left: 0px;
+}
+
+#grande span {
+  margin-left: 15px;
+}
+
+#grande:hover {
+  box-shadow: 0px 0px 0px 2px #f33535;
+}
+
+#grande div {
+  background-color: #f33535;
+}
+
+#media {
+  width: 60px;
+  height: 60px;
+  margin-left: 15px;
+  margin-top: 5px;
+  gap: 20px;
+}
+
+#media:hover {
+  box-shadow: 0px 0px 0px 2px #f0ff17;
+}
+
+#media div {
+  background-color: #f0ff17;
+}
+
+#pequeno {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  margin-left: 30px;
+  gap: 20px;
+}
+
+#pequeno:hover {
+  box-shadow: 0px 0px 0px 2px #4edf3b;
+}
+
+#pequeno div {
+  background-color: #4edf3b;
+}
+
+/*^^^^^^^^^^-----CHECKBOX REDONDA-----^^^^^^^^^^*/
+
+/*vvvvvvvvvv-----CHECKBOX-----vvvvvvvvvv*/
+.clear {
+  clear: both;
+}
+
+.content {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.content span {
+  font-family: "New Amsterdam";
+  font-size: 30px;
+  font-weight: 400;
+  padding-left: 15px;
+  color: rgb(91, 91, 91);
+}
+
+.checkBox {
+  display: block;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 2px rgb(91, 91, 91);
+}
+
+#quimico:hover {
+  box-shadow: 0px 0px 0px 2px #f33535;
+}
+
+#biologico:hover {
+  box-shadow: 0px 0px 0px 2px #9e4904;
+}
+
+#acidente:hover {
+  box-shadow: 0px 0px 0px 2px #2d6fe9;
+}
+
+#fisico:hover {
+  box-shadow: 0px 0px 0px 2px #4edf3b;
+}
+
+#ergonomico:hover {
+  box-shadow: 0px 0px 0px 2px #f0ff17;
+}
+
+.checkBox div {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  top: -52px;
+  left: -52px;
+  position: absolute;
+  transform: rotateZ(45deg);
+  z-index: 100;
+}
+
+#quimico div {
+  background-color: #f33535;
+}
+
+#biologico div {
+  background-color: #9e4904;
+}
+
+#acidente div {
+  background-color: #2d6fe9;
+}
+
+#fisico div {
+  background-color: #4edf3b;
+}
+
+#ergonomico div {
+  background-color: #f0ff17;
+}
+
+.checkBox input[type="checkbox"]:checked+div {
+  left: -10px;
+  top: -10px;
+}
+
+.checkBox input[type="checkbox"] {
+  position: absolute;
+  left: 50px;
+  visibility: hidden;
+}
+
+.transition {
+  transition: 300ms ease;
+}
+
+/*^^^^^^^^^^-----CHECKBOX-----^^^^^^^^^^*/
